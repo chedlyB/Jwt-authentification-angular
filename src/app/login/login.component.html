@@ -1,0 +1,55 @@
+<form (submit)="loginUser()">
+
+	
+
+
+			<div class="col-md-10 col-md-offset-1">
+					<div class="well">
+						<table class="table table-bordered">
+							<thead>
+								<tr class="success">
+										<td colspan="2" id="welcome">
+												Welcome ! 
+											 </td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Email</td>
+									<td>
+										<input [(ngModel)]="username" type="text"  placeholder="Email" [ngModelOptions]="{standalone: true}" />
+									</td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td>
+										<input [(ngModel)]="password" type="password"  placeholder="Password" [ngModelOptions]="{standalone: true}" />
+									</td>
+								</tr>
+								<tr class="success">
+									<td colspan="2">
+										<input id="btnRegister" class="btn btn-success" type="submit" value="Login" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="modal fade" tabindex="-1" id="succesModal"
+							 data-keyboard="false" data-backdrop="static">
+							<div class="modal-dialog modal-sm">
+								<div class="modal-content">
+									<div class="modal-header">
+									
+									</div>
+								</div>
+							</div>
+						</div>
+						<tr class="success">
+								<td colspan="2">
+										<div >
+			<a [routerLink]="['/register']" id="register-form-link">Register</a>
+		</div>
+								</td>
+							</tr>
+					</div>
+				  </div>
+</form>
